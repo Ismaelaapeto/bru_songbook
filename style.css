@@ -1,0 +1,58 @@
+body {
+  font-family: Arial;
+  background: #121212;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: orange;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+li {
+  list-style: none;
+  padding: 12px;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+
+li:hover {
+  background: #333;
+}
+pre {
+  text-align: justify;
+  white-space: pre-wrap;
+  width: 80%;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 18px;
+}
+.song-title {
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* Trick to force last line justification */
+.song-title::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.lyrics {
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 18px;
+  white-space: pre-line;
+}

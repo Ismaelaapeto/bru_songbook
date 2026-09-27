@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lyrics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 id="title"></h2>
+<pre id="lyrics"></pre>
+
+<button onclick="goBack()">⬅ Back</button>
+
+<script>
+  document.getElementById("lyrics").textContent =
+    localStorage.getItem("lyrics");
+
+  document.getElementById("title").textContent =
+    localStorage.getItem("title");
+
+  function goBack() {
+    window.location.href = "index.html";
+  }
+</script>
+
+</body>
+</html>
